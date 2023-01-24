@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    background-image: url("../images/markus-spiske-J_tbkGWxCH0-unsplash.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));;
+    background-image: url("images/basketball-unsplash.png"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));;
     background-blend-mode: overlay;
     background-size: cover;
 }
