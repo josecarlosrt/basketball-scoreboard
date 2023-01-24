@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "CursedTimerUlil";
+    src: url("fonts/CursedTimerUlil-Aznm.ttf");
+}
+
+body {
+    margin: 0;
+    background-image: url("../images/markus-spiske-J_tbkGWxCH0-unsplash.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));;
+    background-blend-mode: overlay;
+    background-size: cover;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 600px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    margin: auto;
+    background-color: #4C1D95; 
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+h3 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.btn {
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: "CursedTimerUlil";
+    font-weight: 700;
+}
+
+.adding-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.btn.adding-btn {
+    padding: 7px 14px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.btn.adding-btn:hover, .btn.adding-btn:focus {
+    color: #FF2151;
+    background-color: #111827;
+    border-color: #FF2151;
+}
+
+.btn.reset-btn {
+    padding: 7px 14px;
+    background-color: #FF2151;
+    color: #111827;
+    border-color: #111827;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.btn.reset-btn:hover, .btn.reset-btn:focus {
+    padding: 7px 14px;
+    background-color: #111827;
+    color: #FF2151;
+    border-color: #FF2151;
+}
+
+.reset-button {
+    margin: 2rem 0 auto;
+}
+
+.container .home, .container .guest {
+    flex: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.marker-box {
+    background-color: #111827;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.marker-box span {
+    font-size: 4rem;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: "CursedTimerUlil";
+    color: #FF2151;
+}
+
+@media (max-width: 769px) {
+    .container {
+        max-width: 100%;
+        width: 75%;
+      }
+  
+      .container .home, .container .guest {
+          flex: 100%;
+    }
+}

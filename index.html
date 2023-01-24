@@ -1,0 +1,38 @@
+<html>
+    <head><meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="home">
+                <h3>HOME</h3>
+                    <div class="marker-box">
+                        <span id="home-score"></span>
+                    </div>
+                        <div class="adding-btn">
+                        <button class="btn adding-btn" onclick="plus(1, 'home-score')">+1</button>
+                        <button class="btn adding-btn" onclick="plus(2, 'home-score')">+2</button>
+                        <button class="btn adding-btn" onclick="plus(3, 'home-score')">+3</button>
+                </div>
+            </div>
+            <div class="guest">
+                <h3>GUEST</h3>
+                <div class="marker-box">
+                        <span id="guest-score"></span>
+                    </div>
+                <div class="adding-btn">
+                    <button class="btn adding-btn" onclick="plus(1, 'guest-score')">+1</button>
+                    <button class="btn adding-btn" onclick="plus(2, 'guest-score')">+2</button>
+                    <button class="btn adding-btn" onclick="plus(3, 'guest-score')">+3</button>
+                </div>
+            </div>
+            <div class="reset-button">
+                <button class="btn reset-btn" onclick="reset()">Reset Scorecard</button>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
